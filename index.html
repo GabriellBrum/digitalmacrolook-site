@@ -5,7 +5,45 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Digital MacroLook | Agência de Marketing Digital</title>
+  <meta name="description"
+    content="Agência de marketing digital especializada em tráfego pago, identidade visual e gestão de redes sociais para artistas, eventos e negócios locais. Resultados reais, estratégia sob medida.">
+  <meta name="keywords"
+    content="agência de marketing digital, tráfego pago, gestão de redes sociais, marketing para artistas, identidade visual, social media">
+  <meta name="author" content="Digital MacroLook">
+  <link rel="canonical" href="https://digitalmacrolook-site.onrender.com/">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://digitalmacrolook-site.onrender.com/">
+  <meta property="og:title" content="Digital MacroLook | Agência de Marketing Digital">
+  <meta property="og:description"
+    content="Tráfego pago, identidade visual e social media para artistas, eventos e negócios locais. Veja nossos cases e resultados.">
+  <meta property="og:image" content="https://digitalmacrolook-site.onrender.com/Logo.png">
+  <meta property="og:locale" content="pt_BR">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Digital MacroLook | Agência de Marketing Digital">
+  <meta name="twitter:description"
+    content="Tráfego pago, identidade visual e social media para artistas, eventos e negócios locais.">
+  <meta name="twitter:image" content="https://digitalmacrolook-site.onrender.com/Logo.png">
+
   <link rel="icon" type="image/png" href="Logo.png">
+
+  <!-- Schema.org structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Digital MacroLook",
+    "description": "Agência de marketing digital especializada em tráfego pago, identidade visual e gestão de redes sociais.",
+    "url": "https://digitalmacrolook-site.onrender.com/",
+    "logo": "https://digitalmacrolook-site.onrender.com/Logo.png",
+    "areaServed": "BR",
+    "sameAs": []
+  }
+  </script>
+
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap');
 
@@ -48,6 +86,7 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
+      gap: 16px;
       padding: 20px 60px;
       background: rgba(8, 8, 8, 0.92);
       backdrop-filter: blur(12px);
@@ -223,6 +262,7 @@
     /* STATS HERO */
     .hero-stats {
       display: flex;
+      align-items: flex-start;
       gap: 48px;
       margin-top: 72px;
       padding-top: 48px;
@@ -243,6 +283,22 @@
       font-size: 13px;
       color: var(--gray);
       margin-top: 4px;
+    }
+
+    .hero-stat-context {
+      display: flex;
+      align-items: center;
+      min-width: 150px;
+      max-width: 150px;
+    }
+
+    .hero-stat-context-text {
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--white);
+      line-height: 1.35;
+      text-transform: uppercase;
+      letter-spacing: 0.3px;
     }
 
     /* SECTION */
@@ -462,6 +518,21 @@
       padding: 32px 28px;
     }
 
+    .team-avatar {
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, rgba(46, 232, 26, 0.18), rgba(46, 232, 26, 0.05));
+      border: 1px solid rgba(46, 232, 26, 0.3);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 22px;
+      font-weight: 800;
+      color: var(--green);
+      margin-bottom: 16px;
+    }
+
     .team-name {
       font-size: 20px;
       font-weight: 800;
@@ -479,6 +550,97 @@
       font-size: 14px;
       color: var(--gray);
       line-height: 1.6;
+    }
+
+    /* AGGREGATE STATS */
+    .aggregate-stats {
+      background: var(--card);
+      border-top: 1px solid rgba(255, 255, 255, 0.06);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    }
+
+    .aggregate-stats-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 32px;
+      margin-top: 8px;
+    }
+
+    .aggregate-stat-item {
+      text-align: center;
+      padding: 24px 16px;
+      background: var(--dark);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      border-radius: 12px;
+    }
+
+    .aggregate-stat-value {
+      font-size: 32px;
+      font-weight: 900;
+      color: var(--green);
+      letter-spacing: -1px;
+    }
+
+    .aggregate-stat-label {
+      font-size: 13px;
+      color: var(--gray);
+      margin-top: 6px;
+    }
+
+    @media (max-width: 700px) {
+      .aggregate-stats-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    /* CLIENTS */
+    .clients {
+      background: var(--card);
+    }
+
+    .clients-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 24px;
+      align-items: center;
+      margin-top: 8px;
+    }
+
+    .client-logo-slot {
+      background: var(--dark);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      border-radius: 10px;
+      height: 90px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 16px;
+      transition: border-color 0.3s;
+    }
+
+    .client-logo-slot:hover {
+      border-color: rgba(46, 232, 26, 0.25);
+    }
+
+    .client-logo-slot img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+      filter: grayscale(100%) brightness(1.4);
+      opacity: 0.75;
+      transition: filter 0.3s, opacity 0.3s;
+    }
+
+    .client-logo-slot:hover img {
+      filter: none;
+      opacity: 1;
+    }
+
+    .client-logo-slot.placeholder {
+      color: var(--gray);
+      font-size: 12px;
+      text-align: center;
+      border-style: dashed;
     }
 
     /* CTA FINAL */
@@ -648,8 +810,8 @@
       <a href="#cases">Cases</a>
       <a href="#servicos">Serviços</a>
       <a href="#equipe">Equipe</a>
-      <a href="#" class="nav-cta" onclick="openQualifier(); return false;">Falar com a gente</a>
     </div>
+    <a href="#" class="nav-cta" onclick="openQualifier(); return false;">Falar com a gente</a>
   </nav>
 
   <!-- HERO -->
@@ -669,16 +831,15 @@
       <a href="#cases" class="btn-secondary">Ver cases</a>
     </div>
     <div class="hero-stats">
-      <div class="hero-stat-item">
-        <div class="hero-stat-value">6 anos</div>
-        <div class="hero-stat-label">de mercado</div>
+      <div class="hero-stat-item hero-stat-context">
+        <div class="hero-stat-context-text">3 últimos<br>principais projetos</div>
       </div>
       <div class="hero-stat-item">
         <div class="hero-stat-value">260+</div>
         <div class="hero-stat-label">ingressos em 20 dias</div>
       </div>
       <div class="hero-stat-item">
-        <div class="hero-stat-value">104k+</div>
+        <div class="hero-stat-value">141k+</div>
         <div class="hero-stat-label">impressões geradas</div>
       </div>
       <div class="hero-stat-item">
@@ -687,6 +848,7 @@
       </div>
     </div>
   </section>
+
 
   <!-- CASES -->
   <section class="cases" id="cases">
@@ -720,6 +882,14 @@
           <div class="case-stat">
             <div class="case-stat-val">R$ 0,98</div>
             <div class="case-stat-label">Custo por clique</div>
+          </div>
+          <div class="case-stat">
+            <div class="case-stat-val">1096</div>
+            <div class="case-stat-label">Cliques gerados</div>
+          </div>
+          <div class="case-stat">
+            <div class="case-stat-val">100.000+</div>
+            <div class="case-stat-label">Contas únicas (Anuncio+Organico)</div>
           </div>
         </div>
         <div class="case-services">
@@ -868,16 +1038,55 @@
     <p class="section-sub">Duas especialidades, um objetivo: resultado para o seu negócio.</p>
     <div class="team-grid">
       <div class="team-card">
+        <div class="team-avatar">GB</div>
         <div class="team-name">Gabriel Brum</div>
         <div class="team-role">Gestor de Tráfego & Estratégia</div>
         <p class="team-desc">Responsável pela gestão de anúncios, copy, planejamento de campanhas e conversão via
           WhatsApp.</p>
       </div>
       <div class="team-card">
+        <div class="team-avatar">KY</div>
         <div class="team-name">Kyara Yasmine</div>
         <div class="team-role">Designer & Direção Criativa</div>
         <p class="team-desc">Responsável pela identidade visual, criação de artes e direção criativa dos projetos.</p>
       </div>
+    </div>
+  </section>
+
+  <!-- NUMEROS AGREGADOS -->
+  <section class="aggregate-stats">
+    <div class="section-tag">Nossos números</div>
+    <h2 class="section-title">O resultado de<br>6 anos de trabalho.</h2>
+    <div class="aggregate-stats-grid">
+      <div class="aggregate-stat-item">
+        <div class="aggregate-stat-value">6 anos</div>
+        <div class="aggregate-stat-label">de mercado</div>
+      </div>
+      <div class="aggregate-stat-item">
+        <div class="aggregate-stat-value">1M+</div>
+        <div class="aggregate-stat-label">pessoas alcançadas</div>
+      </div>
+      <div class="aggregate-stat-item">
+        <div class="aggregate-stat-value">20k+</div>
+        <div class="aggregate-stat-label">leads gerados</div>
+      </div>
+      <div class="aggregate-stat-item">
+        <div class="aggregate-stat-value">R$ 10M+</div>
+        <div class="aggregate-stat-label">faturamento gerado</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- OUTROS CLIENTES -->
+  <section class="clients" id="clientes">
+    <div class="section-tag">Outros Clientes</div>
+    <h2 class="section-title">Marcas que confiam<br>no nosso trabalho.</h2>
+    <div class="clients-grid">
+      <!-- Substitua cada div abaixo por: <div class="client-logo-slot"><img src="logo-cliente.png" alt="Nome do Cliente"></div> -->
+      <div class="client-logo-slot placeholder">Logo 1</div>
+      <div class="client-logo-slot placeholder">Logo 2</div>
+      <div class="client-logo-slot placeholder">Logo 3</div>
+      <div class="client-logo-slot placeholder">Logo 4</div>
     </div>
   </section>
 
