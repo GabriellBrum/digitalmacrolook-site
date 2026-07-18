@@ -610,11 +610,13 @@
       background: var(--dark);
       border: 1px solid rgba(255, 255, 255, 0.06);
       border-radius: 10px;
-      height: 90px;
+      height: 130px;
       display: flex;
+      flex-direction: column;
       align-items: center;
       justify-content: center;
       padding: 16px;
+      gap: 10px;
       transition: border-color 0.3s;
     }
 
@@ -624,16 +626,17 @@
 
     .client-logo-slot img {
       max-width: 100%;
-      max-height: 100%;
+      max-height: 60px;
       object-fit: contain;
-      filter: grayscale(100%) brightness(1.4);
-      opacity: 0.75;
-      transition: filter 0.3s, opacity 0.3s;
-    }
-
-    .client-logo-slot:hover img {
       filter: none;
       opacity: 1;
+    }
+
+    .client-logo-slot .client-name {
+      font-size: 13px;
+      color: var(--gray);
+      text-align: center;
+      line-height: 1.3;
     }
 
     .client-logo-slot.placeholder {
@@ -790,8 +793,16 @@
       }
 
       .client-logo-slot {
-        height: 70px;
+        height: 110px;
         padding: 10px;
+      }
+
+      .client-logo-slot img {
+        max-height: 45px;
+      }
+
+      .client-logo-slot .client-name {
+        font-size: 11px;
       }
 
       footer {
@@ -1087,19 +1098,19 @@
     <div class="section-tag">Outros Clientes</div>
     <h2 class="section-title">Marcas que confiam<br>no nosso trabalho.</h2>
     <div class="clients-grid">
-      <div class="client-logo-slot"><img src="OutrosClientes/aCoroaSuplementos.jpg" alt="A Coroa Suplementos" loading="lazy"></div>
-      <div class="client-logo-slot"><img src="OutrosClientes/alfaLagos.jpg" alt="Alfa Lagos" loading="lazy"></div>
-      <div class="client-logo-slot"><img src="OutrosClientes/barbeariG5.jpg" alt="Barbearia G5" loading="lazy"></div>
-      <div class="client-logo-slot"><img src="OutrosClientes/cakeJu.jpg" alt="Cake Ju" loading="lazy"></div>
-      <div class="client-logo-slot"><img src="OutrosClientes/camisa27.jpg" alt="Camisa 27" loading="lazy"></div>
-      <div class="client-logo-slot"><img src="OutrosClientes/carbem.jpg" alt="Carbem" loading="lazy"></div>
-      <div class="client-logo-slot"><img src="OutrosClientes/dabenStore.jpg" alt="Daben Store" loading="lazy"></div>
-      <div class="client-logo-slot"><img src="OutrosClientes/encontroMarcado.jpg" alt="Encontro Marcado" loading="lazy"></div>
-      <div class="client-logo-slot"><img src="OutrosClientes/joaoSinder.jpg" alt="João Sinder" loading="lazy"></div>
-      <div class="client-logo-slot"><img src="OutrosClientes/kiBocao.jpg" alt="Ki Bocão" loading="lazy"></div>
-      <div class="client-logo-slot"><img src="OutrosClientes/miniOvosDeColher.jpg" alt="Mini Ovos de Colher" loading="lazy"></div>
-      <div class="client-logo-slot"><img src="OutrosClientes/paranaGas.jpg" alt="Paraná Gás" loading="lazy"></div>
-      <div class="client-logo-slot"><img src="OutrosClientes/urusPayment.jpg" alt="Urus Payment" loading="lazy"></div>
+      <div class="client-logo-slot"><img src="OutrosClientes/aCoroaSuplementos.jpg" alt="A Coroa Suplementos" loading="lazy"><span class="client-name">A Coroa Suplementos</span></div>
+      <div class="client-logo-slot"><img src="OutrosClientes/alfaLagos.jpg" alt="Alfa Lagos" loading="lazy"><span class="client-name">Alfa Lagos</span></div>
+      <div class="client-logo-slot"><img src="OutrosClientes/barbeariG5.jpg" alt="Barbearia G5" loading="lazy"><span class="client-name">Barbearia G5</span></div>
+      <div class="client-logo-slot"><img src="OutrosClientes/cakeJu.jpg" alt="Cake Ju" loading="lazy"><span class="client-name">Cake Ju</span></div>
+      <div class="client-logo-slot"><img src="OutrosClientes/camisa27.jpg" alt="Camisa 27" loading="lazy"><span class="client-name">Camisa 27</span></div>
+      <div class="client-logo-slot"><img src="OutrosClientes/carbem.jpg" alt="Carbem" loading="lazy"><span class="client-name">Carbem</span></div>
+      <div class="client-logo-slot"><img src="OutrosClientes/dabenStore.jpg" alt="Daben Store" loading="lazy"><span class="client-name">Daben Store</span></div>
+      <div class="client-logo-slot"><img src="OutrosClientes/encontroMarcado.jpg" alt="Encontro Marcado" loading="lazy"><span class="client-name">Encontro Marcado</span></div>
+      <div class="client-logo-slot"><img src="OutrosClientes/joaoSinder.jpg" alt="João Sinder" loading="lazy"><span class="client-name">João Sinder</span></div>
+      <div class="client-logo-slot"><img src="OutrosClientes/kiBocao.jpg" alt="Ki Bocão" loading="lazy"><span class="client-name">Ki Bocão</span></div>
+      <div class="client-logo-slot"><img src="OutrosClientes/miniOvosDeColher.jpg" alt="Mini Ovos de Colher" loading="lazy"><span class="client-name">Mini Ovos de Colher</span></div>
+      <div class="client-logo-slot"><img src="OutrosClientes/paranaGas.jpg" alt="Paraná Gás" loading="lazy"><span class="client-name">Paraná Gás</span></div>
+      <div class="client-logo-slot"><img src="OutrosClientes/urusPayment.jpg" alt="Urus Payment" loading="lazy"><span class="client-name">Urus Payment</span></div>
     </div>
   </section>
 
